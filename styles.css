@@ -1,0 +1,87 @@
+/* General body styling */
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center everything */
+#buttons, #score, #results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons {
+    margin-top: 60px;
+    gap: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the buttons */
+#buttons button {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin: 0 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+#buttons button:hover:not(:disabled) {
+    background: #2563eb;
+    transform: translateY(-2px) scale(1.05);
+}
+
+#buttons button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* Score styling */
+#score {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 30px 0 10px 0;
+    color: #2563eb;
+}
+
+/* Results styling */
+#results {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    min-height: 60px;
+}
+
+#results p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* Winner announcement */
+#results p:last-child {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #16a34a;
+}
